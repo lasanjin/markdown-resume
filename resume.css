@@ -1,0 +1,176 @@
+/*
+h1          main title
+h2          category titles
+h3          about me & contact text
+strong      title
+em          subtitle
+p           text
+code        dates
+a           links
+border      line at the top
+i           skill-dots
+table       table of skills
+ul          lists
+li          small bulletpoints
+*/
+
+:root {
+    --color-h1: #666; 
+    --color-h2: #666; 
+    --color-h3: #555; 
+    --color-strong: #333;
+    --color-em: #256c8d;
+    --color-p: #333; 
+    --color-code: #666; 
+    --color-a: #429dc7;
+    --color-background: #fff; 
+    --color-border: #256c8d;
+    --color-i: #719daf;
+
+    --code-left: -19.5%; 
+    --calendar-left: -24%;
+    --p-left: 32%;
+    --ul-left: 35%; 
+    --table-left: 37.5%;
+    --p-padding-left: 45px; 
+    --li-padding-top: 6px; 
+    
+    --ul-width: 59%; 
+    --p-width: 60%; 
+    --table-width: 60%; 
+    --border-width: 70%; 
+    --photo-margin-top: 0;
+
+    --font-size-code: 14px;
+}
+  
+* {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+img[alt=cal] {
+    left: var(--calendar-left);
+    fill: pink;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+}
+
+#profile-photo {
+    width: 135px;
+    height: 135px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    left: 80%;
+    top: 10px;
+    z-index: -1;
+}
+
+#profile-photo img {
+    margin-top: var(--photo-margin-top);
+    width: 100%;
+    height: auto;
+}
+
+img[alt=icon] {
+    width: 18px;
+    height: 18px;
+    vertical-align: text-top;
+}
+
+h1 {
+    color: var(--color-h1);
+    border-bottom: 4px solid var(--color-border);
+    width: var(--border-width);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--color-h2);
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    color: var(--color-h3);
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
+
+p {
+    left: var(--p-left);
+    padding-left: var(--p-padding-left);
+    position: relative;
+    width: var(--p-width);
+    margin-top: 0;
+}
+
+code {
+    font-size: var(--font-size-code);
+    color: var(--color-code);
+    left: var(--code-left);
+    position: absolute;
+}
+
+ul {
+    left: var(--ul-left);
+    width: var(--ul-width);
+    position: relative;
+    top: -16px;
+    bottom: 0;
+    list-style: none;
+}
+
+li:before {
+    padding-top: var(--li-padding-top);
+    content: "\2022";
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+a {
+    color: var(--color-a);
+    text-decoration: none;
+}
+
+strong {
+    color: var(--color-strong);
+    font-weight: bold;
+}
+
+em {
+    color: var(--color-em);
+    font-style: normal;
+}
+
+table {
+    left: var(--table-left);
+    width: var(--table-width);
+    position: relative;
+}
+
+th {
+    color: var(--color-strong);
+    width: 0;
+    padding-bottom: 5px;
+}
+
+td {
+    width: 0;
+}
+
+i {
+    color: var(--color-i);
+}
