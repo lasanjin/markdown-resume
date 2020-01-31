@@ -38,7 +38,7 @@ li          small bulletpoints
     --ul-width: 59%; 
     --p-width: 60%; 
     --table-width: 60%; 
-    --border-width: 70%; 
+    --border-width: 69%; 
     --photo-margin-top: 0;
 
     --font-size-code: 14px;
@@ -105,7 +105,7 @@ h3 {
     font-weight: 400;
     margin-top: 10px;
     padding-bottom: 15px;
-    padding-right: 15px;
+    padding-right: 0px;
 }
 
 p {
