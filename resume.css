@@ -173,4 +173,5 @@ td {
 
 i {
     color: var(--color-i);
+    font-style: normal;
 }

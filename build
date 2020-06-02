@@ -1,15 +1,17 @@
 #!/bin/bash
 
 build() {
-    pandoc \
-    -V margin-top=15 \
-    -V margin-left=17.7 \
-    -V margin-right=17.5 \
-    -V margin-bottom=15 \
-    -c resume.css \
-    -t html5 \
-    -o resume.pdf \
-    resume.md
+    ./lib/pandoc-2.9.2.1/bin/pandoc \
+        --pdf-engine=$PWD"/lib/wkhtmltopdf" \
+        --variable=margin-top=15 \
+        --variable=margin-left=17.7 \
+        --variable=margin-right=17.5 \
+        --variable=margin-bottom=15 \
+        --css=resume.css \
+        --from=markdown \
+        --to=html5 \
+        --output=resume.pdf \
+        resume.md
 }
 
 build
