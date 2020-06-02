@@ -1,13 +1,13 @@
 /*
-h1          main title
-h2          category titles
-h3          about me & contact text
-strong      title
-em          subtitle
+h1          main title 
+border      line at the top
+h3          contact & about me text
+h2          category titles (About me, Education, ...)
+strong      title (Degree, Position, ...)
+em          subtitle (University, Company, ...)
 p           text
 code        dates
 a           links
-border      line at the top
 i           skill-dots
 table       table of skills
 ul          lists
