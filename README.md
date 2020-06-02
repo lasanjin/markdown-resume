@@ -12,3 +12,5 @@ $ ./build`
     - `sudo apt install pandoc`
   - Install wkhtmltopdf
     - `sudo apt install wkhtmltopdf`
+  - Build PDF
+    - `pandoc --pdf-engine=wkhtmltopdf -V margin-top=15 -V margin-left=17.7 -V margin-right=17.5 -V margin-bottom=15 -c resume.css -f markdown -t html5 -o resume.pdf resume.md`
