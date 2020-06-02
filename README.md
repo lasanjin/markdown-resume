@@ -4,7 +4,7 @@ My markdown resume template with css for formatting. Uses pre-build [Pandoc](htt
 ### How to use
 - Execute build
 ```
-$ ./build`
+$ ./build
 ```
 
 - DIY
