@@ -1,8 +1,7 @@
 #!/bin/bash
 
 build() {
-    ./lib/pandoc-2.9.2.1/bin/pandoc \
-        --pdf-engine=$PWD"/lib/wkhtmltopdf" \
+    ./pandoc-2.9.2.1/bin/pandoc \
         --variable=margin-top=15 \
         --variable=margin-left=17.7 \
         --variable=margin-right=17.5 \
